@@ -23,7 +23,10 @@ const TodoItem: React.FC<PropsType> = (props) => {
         dispatch(toggleCompleted(props.index))
     }
     const onClickRemoveTodoItem = () => {
-        dispatch(removeTodoItem(props.index))
+        // eslint-disable-next-line no-restricted-globals
+        if (confirm("Вы действительно хотите удалить задачу?")) {
+            dispatch(removeTodoItem(props.index))
+        }
     }
     const onClickEditTodoItem = () => {
         dispatch(setEditingTodoNumber(props.index))
