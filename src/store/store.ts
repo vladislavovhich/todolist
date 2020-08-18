@@ -1,12 +1,16 @@
-import {createStore, combineReducers, applyMiddleware, Action} from "redux";
-import thunkMiddleware, {ThunkAction} from "redux-thunk";
+import {combineReducers, createStore} from "redux";
+import todoReducer from "./todoReducer";
 
-const reducers = combineReducers({});
+const reducers = combineReducers({
+    todoPage: todoReducer
+});
 
-const store = createStore(reducers, applyMiddleware(thunkMiddleware));
+const store = createStore(reducers);
 
-export type BaseThunkType<A extends Action, R = Promise<void>> = ThunkAction<R, StateType, unknown, A>
 export type StateType = ReturnType<typeof reducers>;
 export type CombineActions<T> = T extends { [key: string]: infer U } ? U : never;
+
+// @ts-ignore
+window.store = store
 
 export default store;

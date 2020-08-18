@@ -1,11 +1,15 @@
 import React from "react";
+import TodoPanel from "./Todo/TodoPanel";
 
 type PropsType = {};
 
 const Main: React.FC<PropsType> = (props) => {
     return (
-        <div className="Main">
-        </div>
+        <main className="Main py-3">
+            <div className="container">
+                <TodoPanel />
+            </div>
+        </main>
     )
 };
 

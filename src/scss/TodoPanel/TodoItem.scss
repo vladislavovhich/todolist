@@ -1,2 +1,79 @@
 .TodoItem {
+  overflow: hidden;
+
+  &:not(:first-child) {
+    margin-top: 0.75rem;
+  }
+
+  .TodoItem__top {
+    border-bottom: 1px solid #740274;
+    background-color: #740274;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+
+    .TodoItem__title {
+      color: white;
+      font-family: sans-serif;
+      font-size: 1.1rem;
+    }
+
+    .TodoItem__editing {
+      button {
+        outline: none;
+        background: none;
+        border: none;
+
+        &:active {
+          svg {
+            color: #aaaaaa;
+          }
+        }
+
+        svg {
+          color: white;
+          font-size: 1.05rem;
+          transition: all .5s;
+        }
+      }
+    }
+  }
+
+  .TodoItem__mid {
+    border: 1px solid gray;
+    padding: 0.25rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.05rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .TodoItem__bottom {
+    padding: 0.25rem 1rem;
+    font-family: sans-serif;
+    font-size: 1.05rem;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    .TodoItem__text {
+      color: #403f3f;
+    }
+
+    .TodoItem__completed {
+      color: green;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .TodoItem__uncompleted {
+      color: #c22b2b;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

@@ -1,2 +1,46 @@
 .TodoItemAddPane {
+  .TodoItemAddPane__title {
+    font-family: sans-serif;
+    width: 15rem;
+    outline: none;
+    color: #740274;
+    border: 0.15rem solid #740274;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+
+    &::placeholder {
+      color: #740274;
+    }
+  }
+
+  .TodoItemAddPane__description {
+    font-family: sans-serif;
+    width: 15rem;
+    outline: none;
+    color: #740274;
+    border: 0.15rem solid #740274;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    resize: none;
+
+    &::placeholder {
+      color: #740274;
+    }
+  }
+
+  .TodoItemAddPane__addBtn {
+    font-family: sans-serif;
+    width: 15rem;
+    outline: none;
+    border: 0.15rem solid #740274;
+    padding: 0.05rem 0.25rem;
+    background-color: #740274;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all .5s;
+
+    &:active {
+      background-color: #af02af;
+    }
+  }
 }

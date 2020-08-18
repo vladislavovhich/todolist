@@ -1,2 +1,18 @@
 .Header {
+  height: 2.75rem;
+  border: 1px solid #740274;
+  background-color: #740274;
+
+  .Logo {
+    div {
+      color: white;
+      font-family: sans-serif;
+      font-size: 1.35rem;
+    }
+
+    svg {
+      font-size: 1.325rem;
+      color: white;
+    }
+  }
 }
