@@ -9,7 +9,7 @@ const Header: React.FC<PropsType> = () => {
         <header className="Header">
             <div className="container h-100 d-flex align-items-center justify-content-center">
                 <div className="Logo d-flex flex-row align-items-center justify-content-center">
-                    <div className="mr-1">TodoListApp</div>
+                    <div className="mr-1">TodoList</div>
                     <FontAwesomeIcon icon="clipboard-list" fixedWidth={true}/>
                 </div>
             </div>
