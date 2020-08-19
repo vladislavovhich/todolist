@@ -2,11 +2,7 @@ import {CombineActions} from "./store"
 import {TodoItemType} from "./types";
 
 const initState = {
-    todoItems: [{
-        title: "Test title",
-        description: "Test description",
-        completed: false
-    }] as TodoItemType[],
+    todoItems: [] as TodoItemType[],
     todoItemDescription: "",
     todoItemTitle: "",
     editingTodoItemNumber: -1,
